@@ -1,0 +1,15 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "IRANSans-Medium";
+  src: url("./fonts/IRANSans-Medium-web.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/IRANSans-Medium-web.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("./fonts/IRANSans-Medium-web.otf") format("opentype"),
+    /* Open Type Font */ url("./fonts/IRANSans-Medium-web.svg") format("svg"),
+    /* Legacy iOS */ url("./fonts/IRANSans-Medium-web.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("./fonts/IRANSans-Medium-web.woff")
+      format("woff"),
+    /* Modern Browsers */ url("./fonts/IRANSans-Medium-web.woff2")
+      format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
