@@ -37,7 +37,7 @@ const Register = () => {
           setTimeout(() => {
             console.log(values);
             axios
-          .post("http://localhost:9000/posts", values)
+          .post("http://127.0.0.1:8000/", values)
           .then((res) => {
             console.log(res.data);
             if (res.status > 199 && res.status < 300) {
