@@ -31,26 +31,51 @@ const Register = () => {
   return (
     <>
       <Formik
-        initialValues={{ fullName: "", userName: "", phoneNumber: "", password: "", repeatPassword: "" }}
+        initialValues={{
+          fullName: "",
+          userName: "",
+          phoneNumber: "",
+          password: "",
+          repeatPassword: "",
+        }}
         validationSchema={SignupSchema}
         onSubmit={(values, { setSubmitting }) => {
-          setTimeout(() => {
-            console.log(values);
-            axios
-          .post("http://127.0.0.1:8000/", values)
-          .then((res) => {
-            console.log(res.data);
-            if (res.status > 199 && res.status < 300) {
-              toast.success("کاربر با موفقیت اضافه شد");
+          setTimeout(async () => {
+            try {
+              console.log(values);
+              let config = {
+                method: "post",
+                url: "http://127.0.0.1:8000/",
+                headers: {
+                  "User-Agent":
+                    "Mozilla/5.0 (Windows NT 6.1; rv:76.0) Gecko/20100101 Firefox/76.0",
+                  Accept: "*/*",
+                  "Access-Control-Allow-Origin": "*",
+                },
+                data: values,
+              };
+              const res = await axios(config).then((res) => {
+                console.log(res.data);
+                if (res.status > 199 && res.status < 300) {
+                  toast.success("کاربر با موفقیت اضافه شد");
+                }
+              });
+            } catch (error) {
+              console.log(error);
+              toast.error("عملیات ناموفق بود :(");
             }
-          })
-          .catch((error) => {
-            console.log(error);
-            toast.error("عملیات ناموفق بود :(");
-          });
+            // .then((res) => {
+            //   console.log(res.data);
+            //   if (res.status > 199 && res.status < 300) {
+            //     toast.success("کاربر با موفقیت اضافه شد");
+            //   }
+            // })
+            // .catch((error) => {
+            //   console.log(error);
+            //   toast.error("عملیات ناموفق بود :(");
+            // });
             setSubmitting(false);
           }, 400);
-          toast.success("شما با موفقیت وارد شدید");
         }}
       >
         {({ isSubmitting }) => (

@@ -27,6 +27,14 @@
       "password": "Aa123456#",
       "repeatPassword": "ffgfgfgfgg",
       "id": 1
+    },
+    {
+      "fullName": "mohammad",
+      "userName": "sadmin",
+      "phoneNumber": "09123264868",
+      "password": "012345678",
+      "repeatPassword": "012345678",
+      "id": 2
     }
   ]
 }
