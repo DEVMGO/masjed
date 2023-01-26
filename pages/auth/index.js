@@ -10,13 +10,13 @@ const AuthPage = () => {
         <div className="w-full flex items-center">
           <button
             onClick={() => setAuth("login")}
-            className={`w-full py-4 text-sm hover:bg-green-400 ${auth === "login" ? "border-b-green-400" : 'border-b-transparent'} border-b-4`}
+            className={`w-full py-4 text-sm ${auth === "login" ? "border-b-green-400 text-green-600" : 'border-b-transparent'} border-b-4`}
           >
             ورود
           </button>
           <button
             onClick={() => setAuth("register")}
-            className={`w-full py-4 text-sm hover:bg-green-400 ${auth === "register" ? "border-b-green-400" : 'border-b-transparent'} border-b-4`}
+            className={`w-full py-4 text-sm ${auth === "register" ? "border-b-green-400 text-green-600" : 'border-b-transparent'} border-b-4`}
           >
             ثبت‌نام
           </button>

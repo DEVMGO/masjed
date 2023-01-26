@@ -1,8 +1,10 @@
 .mainHome {
+  width: 100%;
+  min-height: 70vh;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2rem;
+  background: #f9f9f9;
 }

@@ -96,7 +96,7 @@ const Login = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full rounded-md bg-green-600 text-white py-2 my-4"
+              className="w-full rounded-md bg-green-600 text-white py-2 my-4 bg-gradient-to-r from-[#48C32A] to-[#088F4A]"
             >
               ارسال کد
             </button>
