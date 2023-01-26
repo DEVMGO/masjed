@@ -4,14 +4,14 @@
 
 @font-face {
   font-family: "Vazir";
-  src: url("../public/vazirFont/vazir-medium-webfont.eot"); /* IE9 Compat Modes */
-  src: url("../public/vazirFont/vazir-medium-webfont.eot?#iefix") format("embedded-opentype"),
+  src: url("../public/assets/font/vazirFont/vazir-medium-webfont.eot"); /* IE9 Compat Modes */
+  src: url("../public/assets/font/vazirFont/vazir-medium-webfont.eot?#iefix") format("embedded-opentype"),
     /* IE6-IE8 url("../public/assets/font/iranSans/fonts/IRANSans-Medium-web.otf") format("opentype"), */
-    /* Open Type Font */ url("../public/vazirFont/vazir-medium-webfont.svg") format("svg"),
+    /* Open Type Font */ url("../public/assets/font/vazirFont/vazir-medium-webfont.svg") format("svg"),
     /* Legacy iOS url("../public/assets/font/iranSans/fonts/IRANSans-Medium-web.ttf") format("truetype"), */
-    /* Safari, Android, iOS */ url("../public/vazirFont/vazir-medium-webfont.woff")
+    /* Safari, Android, iOS */ url("../public/assets/font/vazirFont/vazir-medium-webfont.woff")
       format("woff"),
-    /* Modern Browsers */ url("../public/vazirFont/vazir-medium-webfont.woff2")
+    /* Modern Browsers */ url("../public/assets/font/vazirFont/vazir-medium-webfont.woff2")
       format("woff2"); /* Modern Browsers */
   font-weight: normal;
   font-style: normal;

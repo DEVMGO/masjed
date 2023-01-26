@@ -30,7 +30,7 @@ const NewVideos = ({ videoList }) => {
       <div className="w-full h-full grid grid-cols-19 my-8">
         {videoList?.map((item, index) => (
           <div key={index + 'newvideoslist'} className="w-full h-full p-2 flex items-center justify-center flex-col">
-            <div className="w-full h-full rounded-md overflow-hidden relative">
+            <div className="w-full h-full rounded-md overflow-hidden relative shadow-3xl">
               <Image src={item.cover} alt={item.title} className="w-full h-full" />
               <div className="absolute text-white text-5xl w-full h-full flex items-center justify-center top-0 left-0 bg-black bg-opacity-50">
                 <FaPlay className="cursor-pointer" />

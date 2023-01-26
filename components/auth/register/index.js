@@ -57,23 +57,13 @@ const Register = () => {
               const res = await axios(config).then((res) => {
                 console.log(res.data);
                 if (res.status > 199 && res.status < 300) {
-                  toast.success("کاربر با موفقیت اضافه شد");
+                  toast.success("ثبت‌نام با موفقیت انجام شد");
                 }
               });
             } catch (error) {
               console.log(error);
-              toast.error("عملیات ناموفق بود :(");
+              toast.error("ثبت‌نام ناموفق بود :(");
             }
-            // .then((res) => {
-            //   console.log(res.data);
-            //   if (res.status > 199 && res.status < 300) {
-            //     toast.success("کاربر با موفقیت اضافه شد");
-            //   }
-            // })
-            // .catch((error) => {
-            //   console.log(error);
-            //   toast.error("عملیات ناموفق بود :(");
-            // });
             setSubmitting(false);
           }, 400);
         }}

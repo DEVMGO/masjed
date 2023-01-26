@@ -15,7 +15,8 @@ module.exports = {
         black44: "#444",
         khaki: "#cbb27a",
         lightKhaki: "#e1cb9d96",
-        bgColor: '#d8b771d10'
+        bgColor: '#d8b771d10',
+        bgkhaki: "#cbc798",
       },
       screens: {
         res1: "1410px",
@@ -27,7 +28,8 @@ module.exports = {
         res7: { max: "1200px" },
       },
       boxShadow: {
-        '3xl': '0 0 15px 0px rgba(0, 0, 0, 0.4)',
+        '3xl': '0 0 15px 0px rgba(0, 0, 0, 0.7)',
+        '4xl': '0 0 15px 3px rgba(0, 0, 0, 0.4)',
       },
       gridTemplateColumns: {
         16: "repeat(auto-fit, minmax(150px, 1fr))",

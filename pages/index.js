@@ -6,14 +6,8 @@ import SidebarHome from "@/components/home/sidebar";
 import NewVideos from "@/components/home/newVideos";
 // Styles
 import styles from "@/styles/Home.module.css";
-import { useEffect } from "react";
-import axios from "axios";
 
 export default function Home() {
-  useEffect(() => {
-    axios.get("http://127.0.0.1:8000/")
-    .then(res => console.log(res.data))
-  }, [])
   return (
     <>
       <Head>
@@ -22,15 +16,16 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <div className={styles.mainHome}>
-        <div className="w-full flex items-start justify-center">
-          <div className="w-1/4">
+        <div className="w-full flex items-start justify-center res5:flex-col">
+          <div className="w-1/4 res5:order-2 res5:w-full res5:my-6">
             <SidebarHome />
           </div>
-          <div className="w-3/4 pr-8">
+          <div className="w-3/4 pr-8 res5:pr-0 res5:order-1 res5:w-full">
             <div
               id="slider_home"
-              className="w-full h-[60vh] rounded-2xl overflow-hidden bg-slate-700 shadow-3xl shadow-neutral-700"
+              className="w-full h-[60vh] res5:h-72 rounded-2xl overflow-hidden bg-slate-700 shadow-3xl shadow-neutral-700"
             >
               <SliderHome />
             </div>
