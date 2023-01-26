@@ -31,7 +31,7 @@ const Register = () => {
   return (
     <>
       <Formik
-        initialValues={{ phoneNumber: "" }}
+        initialValues={{ fullName: "", userName: "", phoneNumber: "", password: "", repeatPassword: "" }}
         validationSchema={SignupSchema}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {

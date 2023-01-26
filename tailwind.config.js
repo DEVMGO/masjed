@@ -14,7 +14,8 @@ module.exports = {
         black33: "#333",
         black44: "#444",
         khaki: "#cbb27a",
-        lightKhaki: "#e1cb9d96"
+        lightKhaki: "#e1cb9d96",
+        bgColor: '#d8b771d10'
       },
       screens: {
         res1: "1410px",

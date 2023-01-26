@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "name": "saeed2",
+      "email": "saeed@emailcom",
+      "id": "1"
+    },
+    {
+      "name": "mgo2",
+      "email": "arshavin8358@gmail.com",
+      "date": "2023-01-04T20:30:00.000Z",
+      "id": "PxzLM_1"
+    },
+    {
+      "name": "mgo",
+      "email": "sdsd@wew.hj",
+      "date": "2023-01-16",
+      "image": "",
+      "id": "q57JXfn"
+    }
+  ],
+  "user": [
+    {
+      "fullName": "sdasdasdasd",
+      "userName": "sadmin",
+      "phoneNumber": "12222122121",
+      "password": "Aa123456#",
+      "repeatPassword": "ffgfgfgfgg",
+      "id": 1
+    }
+  ]
+}
