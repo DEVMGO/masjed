@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import { Field, Form, Formik, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { toast } from "react-toastify";
@@ -35,6 +36,18 @@ const Register = () => {
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
             console.log(values);
+            axios
+          .post("http://localhost:9000/posts", values)
+          .then((res) => {
+            console.log(res.data);
+            if (res.status > 199 && res.status < 300) {
+              toast.success("کاربر با موفقیت اضافه شد");
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+            toast.error("عملیات ناموفق بود :(");
+          });
             setSubmitting(false);
           }, 400);
           toast.success("شما با موفقیت وارد شدید");
