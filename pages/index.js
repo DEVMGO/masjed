@@ -6,8 +6,14 @@ import SidebarHome from "@/components/home/sidebar";
 import NewVideos from "@/components/home/newVideos";
 // Styles
 import styles from "@/styles/Home.module.css";
+import { useEffect } from "react";
+import axios from "axios";
 
 export default function Home() {
+  useEffect(() => {
+    axios.get("http://127.0.0.1:8000/")
+    .then(res => console.log(res.data))
+  }, [])
   return (
     <>
       <Head>
@@ -31,6 +37,7 @@ export default function Home() {
           </div>
         </div>
         <NewVideos />
+        
       </div>
     </>
   );
