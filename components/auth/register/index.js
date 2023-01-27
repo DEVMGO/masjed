@@ -46,12 +46,15 @@ const Register = () => {
               let config = {
                 method: "post",
                 url: "http://127.0.0.1:8000/",
-                headers: {
-                  "User-Agent":
-                    "Mozilla/5.0 (Windows NT 6.1; rv:76.0) Gecko/20100101 Firefox/76.0",
-                  Accept: "*/*",
-                  "Access-Control-Allow-Origin": "*",
-                },
+                // headers: {
+                  // "Content-Type": "application/json",
+                  // Authorization: "aplication/json",
+                  // "Access-Control-Allow-Origin": "*",
+                //   "User-Agent":
+                //     "Mozilla/5.0 (Windows NT 6.1; rv:76.0) Gecko/20100101 Firefox/76.0",
+                //   Accept: "*/*",
+                //   "Access-Control-Allow-Origin": "*",
+                // },
                 data: values,
               };
               const res = await axios(config).then((res) => {
